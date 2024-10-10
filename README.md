@@ -19,6 +19,11 @@ To use UpdateKit, first of all:
 ## Implementation
 
 ## Screenshots
+<div style="display: inline">
+    <img src="Simulator Screenshot - iPhone 16 Pro - 2024-10-10 at 21.29.58.png" alt="alt text" height=550>
+  <img src="Simulator Screen Recording - iPhone 16 Pro - 2024-10-10 at 21.30.15.mp4" alt="alt text" height=550>
+  <img src="Simulator Screen Recording - iPhone 16 Pro Max - 2024-10-10 at 21.41.12.mp4" alt="alt text" height=550>
+</div>
 
 
 ## Developer
