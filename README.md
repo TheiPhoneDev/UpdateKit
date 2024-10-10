@@ -1,4 +1,5 @@
 #  UpdateKit
+A simple and lightweight Swift library to better present release notes in iOS apps.
 
 ## Requirements
 **UpdateKit** requires iOS 15.0, macOS 12.0 and visionOS 1.0
