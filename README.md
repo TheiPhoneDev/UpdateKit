@@ -5,7 +5,7 @@ A simple and lightweight Swift library to better present release notes in iOS ap
 - Fix "Continue" button background's color for visionOS UI
 
 ## Requirements
-**UpdateKit** requires iOS 15.0, macOS 12.0 and visionOS 1.0
+**UpdateKit** requires iOS 15.0 and visionOS 1.0
 
 ## What is update kit ?
 
