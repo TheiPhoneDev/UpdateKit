@@ -34,6 +34,7 @@ public struct UpdateViewHandler: View {
                                             Image(systemName: note.updateNoteImage)
                                                 .font(typography.sfSymbolFontType)
                                                 .foregroundColor(Color(uiColor: typography.imageColor))
+                                            
                                         } else if note.updateNoteImageType == "Text" {
                                             Text(note.updateNoteImage)
                                                 .font(typography.sfSymbolFontType)
@@ -44,14 +45,17 @@ public struct UpdateViewHandler: View {
                                             Text(note.updateNoteDescription)
                                                 .font(typography.textDescriptionFontType)
                                                 .foregroundColor(typography.textDescriptionFontColor)
-                                                
+                                            
                                         }
                                     }.padding()
                                         .frame(maxWidth: .infinity, alignment: .leading)
                                 }
+
                             }
                         }
+
                     })
+                    #if os(iOS)
                     Button {
                         self.presentationMode.wrappedValue.dismiss()
                         self.updatePresenter.isPresentable = false
@@ -64,14 +68,31 @@ public struct UpdateViewHandler: View {
                             .padding(.top,10)
                     }.buttonStyle(.borderedProminent)
                         .tint(Color(uiColor: typography.buttonColor))
+                    #endif
+                    #if os(visionOS)
+                    Button {
+                        self.presentationMode.wrappedValue.dismiss()
+                        self.updatePresenter.isPresentable = false
+                    } label: {
+                        Text("Continue")
+                            .font(.title3.weight(.medium))
+                            .padding(.leading,60)
+                            .padding(.trailing,60)
+                            .padding(.bottom,10)
+                            .padding(.top,10)
+                    }.buttonStyle(.borderedProminent)
+                        .padding(.bottom,20)
+                    #endif
+                    
                 }
             }.toolbar(content: {
                 ToolbarItem(placement: .principal, content: {
                     Text("What's new")
                         .font(.title3.weight(.semibold))
+                        .frame(maxWidth: .infinity, alignment: .center)
                 })
             })
-        })
+        }).navigationViewStyle(.stack)
     }
 }
 
@@ -100,3 +121,4 @@ public class UpdatePresenter: ObservableObject {
 #Preview {
     UpdateViewHandler(updateNotes: notes)
 }
+
