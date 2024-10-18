@@ -68,6 +68,7 @@ public struct UpdateViewHandler: View {
                             .padding(.top,10)
                     }.buttonStyle(.borderedProminent)
                         .tint(Color(uiColor: typography.buttonColor))
+                        .padding(.bottom,10)
                     #endif
                     #if os(visionOS)
                     Button {
