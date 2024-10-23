@@ -29,7 +29,9 @@ public struct UpdateViewHandler: View {
                                     HStack(spacing: 20) {
                                         if note.updateNoteImageType == "Image" {
                                             Image(note.updateNoteImage)
+                                                .resizable()
                                                 .frame(width: typography.imageWidth, height: typography.imageHeight)
+                                                .cornerRadius(10)
                                         } else if note.updateNoteImageType == "Symbol" {
                                             Image(systemName: note.updateNoteImage)
                                                 .font(typography.sfSymbolFontType)
@@ -104,8 +106,8 @@ public class Typography: ObservableObject {
     @Published public var textDescriptionFontColor: Color = .secondary
     @Published public var buttonColor: UIColor = .systemBlue
     @Published public var imageColor: UIColor = .systemGray
-    @Published public var imageWidth: CGFloat = 100
-    @Published public var imageHeight: CGFloat = 100
+    @Published public var imageWidth: CGFloat = 40
+    @Published public var imageHeight: CGFloat = 40
 
     public init() {}
 
