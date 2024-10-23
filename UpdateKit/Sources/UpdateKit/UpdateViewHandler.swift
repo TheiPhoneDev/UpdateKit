@@ -115,6 +115,23 @@ public class UpdatePresenter: ObservableObject {
     @AppStorage("isPresentable") public var isPresentable: Bool = true
     public init() {}
 
+    @MainActor
+    public func setTransparentNavBar() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithTransparentBackground()
+
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
+
+    @MainActor
+    public func resetNavBarAppearance() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithDefaultBackground()
+
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
 }
 
 
