@@ -1,5 +1,5 @@
 #  UpdateKit
-A simple and lightweight Swift library to better present release notes in iOS and visionOS apps.
+A simple and lightweight Swift library to better present release notes in iOS, iPadOS and visionOS apps.
 
 ![UpdateKit](https://img.shields.io/github/v/release/TheiPhoneDev/UpdateKit?label=UpdateKit)
 ![Swift](https://img.shields.io/badge/Swift-6.0-orange?logo=swift)
