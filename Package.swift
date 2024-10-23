@@ -21,5 +21,6 @@ let package = Package(
         .target(
             name: "UpdateKit"),
 
-    ]
+    ],
+    swiftLanguageModes: [.v6]
 )
