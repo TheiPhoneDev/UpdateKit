@@ -1,6 +1,14 @@
 #  UpdateKit
 A simple and lightweight Swift library to better present release notes in iOS and visionOS apps.
 
+![UpdateKit](https://img.shields.io/github/v/release/TheiPhoneDev/UpdateKit?label=UpdateKit)
+![Swift](https://img.shields.io/badge/Swift-6.0-orange?logo=swift)
+![iOS](https://img.shields.io/badge/iOS-15.0-blue?logo=apple)
+![iPadOS](https://img.shields.io/badge/iPadOS-15.0-blue?logo=apple)
+![visionOS](https://img.shields.io/badge/visionOS-1.0-blue?logo=apple)
+
+
+
 ## Requirements
 **UpdateKit** requires iOS 15.0 and visionOS 1.0
 
