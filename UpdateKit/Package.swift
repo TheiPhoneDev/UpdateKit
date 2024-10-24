@@ -16,7 +16,7 @@ let package = Package(
             targets: ["UpdateKit"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/TheiPhoneDev/UpdateKit.git", from: "1.0.4")
+        .package(url: "https://github.com/TheiPhoneDev/UpdateKit.git", .upToNextMajor(from: "1.0.0"))
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
