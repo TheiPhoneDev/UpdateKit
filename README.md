@@ -22,6 +22,7 @@ A simple and lightweight Swift library to better present release notes in iOS, i
 - Customizable cells
 - Native UI
 - Integration with iOS, iPadOS and visionOS
+- Attach Views to show what changes have been made
 - Thread-safe (this means no data race) by using the Sendable protocol
   
 
