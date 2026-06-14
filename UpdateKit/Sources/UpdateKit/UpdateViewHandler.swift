@@ -101,7 +101,6 @@ public struct UpdateViewHandler: View {
 
 
 
-
 #Preview {
     UpdateViewHandler(updateNotes: notes)
 }

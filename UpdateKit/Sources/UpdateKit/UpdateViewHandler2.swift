@@ -111,3 +111,4 @@ public struct UpdateViewHandler2: View {
 #Preview {
     UpdateViewHandler2(viewNotes: viewnotes)
 }
+
