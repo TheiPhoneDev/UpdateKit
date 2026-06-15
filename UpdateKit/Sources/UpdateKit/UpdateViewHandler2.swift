@@ -65,7 +65,21 @@ public struct UpdateViewHandler2: View {
 
                     })
                     #if os(iOS)
-                    Button {
+                    if #available(iOS 26.0,*) {
+                        Button {
+                        self.presentationMode.wrappedValue.dismiss()
+                        self.updatePresenter.isPresentable = false
+                    } label: {
+                        Text("Continue")
+                            .font(.title3.weight(.medium))
+                            .padding(.leading,60)
+                            .padding(.trailing,60)
+                            .padding(.bottom,10)
+                            .padding(.top,10)
+                    }.buttonStyle(.borderedProminent)
+                        .tint(Color(uiColor: typography.buttonColor))
+                    } else {
+                        Button {
                         self.presentationMode.wrappedValue.dismiss()
                         self.updatePresenter.isPresentable = false
                     } label: {
@@ -78,6 +92,7 @@ public struct UpdateViewHandler2: View {
                     }.buttonStyle(.borderedProminent)
                         .tint(Color(uiColor: typography.buttonColor))
                         .padding(.bottom,10)
+                    }
                     #endif
                     #if os(visionOS)
                     Button {
