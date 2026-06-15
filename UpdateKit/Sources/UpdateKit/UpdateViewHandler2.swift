@@ -78,6 +78,8 @@ public struct UpdateViewHandler2: View {
                             .padding(.top,10)
                     }.buttonStyle(.borderedProminent)
                         .tint(Color(uiColor: typography.buttonColor))
+                        .glassEffect(.regular, in: RoundedRectangle(cornerRadius: 30))
+
                     } else {
                         Button {
                         self.presentationMode.wrappedValue.dismiss()
